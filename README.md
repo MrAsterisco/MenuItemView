@@ -85,6 +85,8 @@ NSLayoutConstraint.activate([
 ## Compatibility
 MenuItemView is compatible with **macOS 10.13 or later**.
 
+> Note: while this library also includes a `MenuItem` view to be used in SwiftUI, there is currently no way to make this work. This is due to multiple unexpected behaviors of the `Menu` component in SwiftUI when targeting macOS. This is a known issue and it's been reported to Apple (`FB13622275`).
+
 ## Contributions
 All contributions to expand the library are welcome. Fork the repo, make the changes you want, and open a Pull Request.
 
