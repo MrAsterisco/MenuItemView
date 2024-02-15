@@ -11,7 +11,9 @@ import SwiftUI
 /// A view that wraps content to be displayed inside a menu item.
 ///
 /// - warning: This view doesn't currently work because SwiftUI doesn't support
-/// using views inside a `Menu` item.
+/// using views inside a `Menu` item. This unexpected behavior, together with others,
+/// has been reported to Apple.
+/// - seealso: Radar `FB13622275`.
 @available(macOS 10.15, *)
 public struct MenuItem<Content: View>: NSViewRepresentable {
 	private let content: () -> Content
